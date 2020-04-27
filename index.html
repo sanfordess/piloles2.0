@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<!--Modernizr - это библиотека JavaScript, которая обнаруживает функции, доступные в браузере пользователя. Это позволяет веб-страницам избегать неподдерживаемых функций, сообщая пользователю, что их браузер не поддерживается, или загружая полифилл.-->
 	<meta name="geo.placename" content=""/><!-- Адресс -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 	<meta name="geo.position" content="55.9191300;37.4223890"/><!-- Координаты-->
 	<meta name="geo.region" content="RU-Московская область"/><!-- Регион -->
 </head>
@@ -17,24 +17,27 @@
             <a class="logo" href="">
                <img src="images/logo.svg" alt="images/logo.svg" title=”интернет-магазин” class=”logo” width="180px" height="40px">
             </a>
-            <div class="nav-toggle">
-               <span></span>
-            </div>
+            <div class="menu-block">
+               <a href="#" class="menu-btn">
+                  <span></span>
+               </a>
+  </div>
+  
             <ul id="menu">
                <li>
-                  <a href="#catalogue">каталог</a>
+                  <a class="nav-btn" href="#catalogue" rel='m_PageScroll2id'>каталог</a>
                </li>
                <li>
-                  <a href="#pay">оплата</a>
+                  <a class="nav-btn" href="#pay" rel='m_PageScroll2id'>оплата</a>
                </li>
                <li>
-                  <a href="#delivery">доставка</a>
+                  <a class="nav-btn" href="#delivery" rel='m_PageScroll2id'>доставка</a>
                </li>
                <li>
-                  <a href="#about">о компании</a>
+                  <a class="nav-btn" href="#about" rel='m_PageScroll2id'>о компании</a>
                </li>
                <li>
-                  <a href="#contacts">контакты</a>
+                  <a class="nav-btn" href="#contacts" rel='m_PageScroll2id'>контакты</a>
                </li>
             </ul>
          </div>
@@ -150,7 +153,6 @@
 				Стоимость доставки будет зависеть от объема пиломатериалов, их размеров, общего веса заказа, расстояния до места назначения.
 
 				После получения заказа покупателю необходимо со всей тщательностью проверить качество и количество доставленных пиломатериалов и в случае возникновения каких-либо спорных вопросов, заказчик должен оформить акт возврата и передать его водителю. Если же никаких вопросов и возражений по качеству и количеству доставленного пиломатериала у получателя нет, то обязательства продавца будут считаться выполненными в полной мере.
-
 				Во избежание каких-либо недоразумений непосредственно перед доставкой уточните с нашим менеджером всю необходимую информацию, касательно доставки: количество, объем пиломатериалов, итоговую стоимость заказа, контактные телефоны и точный адрес доставки. Это значительно облегчит задачу водителю и сократит время доставки до минимума.
 			</p>
       	</div>
@@ -242,6 +244,7 @@
       	</div>
       </section>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="jquery.malihu.PageScroll2id.min.js"></script>
       <script src="main.js"></script>
 </body>
 
